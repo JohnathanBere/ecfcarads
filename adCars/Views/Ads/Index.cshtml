@@ -1,0 +1,22 @@
+﻿@model IEnumerable<adCars.Models.Ad>
+
+@{
+    ViewBag.Title = "Ads";
+}
+
+<h2>Ads</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th>Ad</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var ad in Model)
+    {
+        <tr>
+            <td>@ad.CarMake</td>
+        </tr>
+    }
+    </tbody>
+</table>
